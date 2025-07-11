@@ -1,0 +1,28 @@
+# A PostgreSQL container (via Docker Compose)
+# 🔹 Runs a Postgres DB container, available at localhost:5432 on your machine.
+# 🔹 Shares network with Airflow (when you add Airflow services), so they can talk.
+version: '3'
+services:
+  postgres: #hostname to use in Airflow connection
+    image: postgres:13
+    container_name: POSTGRES_DB
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432" # host port : docker container port
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - airflow_network
+
+# to connect two different docker containers, they need to be on the same network and I have to create another service.
+# it will create a new volumme if it does not exist.
+volumes:
+  postgres_data:
+
+# the docker-compose will create a network called airflow_network if it does not exist.
+networks:
+  airflow_network:
+    external: false

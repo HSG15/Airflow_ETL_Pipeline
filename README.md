@@ -95,6 +95,8 @@ Navigate to [http://localhost:8080](http://localhost:8080) and go to **Admin > C
 | Host      | `https://api.nasa.gov`          |
 | Extra     | `{ "api_key": "YOUR_API_KEY" }` |
 
+<img width="1680" height="1050" alt="Screenshot 2025-07-11 at 8 26 31 AM" src="https://github.com/user-attachments/assets/cbcbe0f9-50d9-4037-9595-216d79ae460b" />
+
 ### 8. Verify Data in DB
 
 Install [DBeaver](https://dbeaver.io/) and connect to Postgres:
@@ -130,6 +132,8 @@ astro deploy <deployment_id> -f
 ```
 
 This deploys your code to Astronomer on AWS.
+
+<img width="1680" height="1050" alt="Screenshot 2025-07-11 at 9 43 51 AM" src="https://github.com/user-attachments/assets/4b2fd3a4-d1ed-41eb-b1df-81fbd8bcdb6c" />
 
 ### 4. Create AWS RDS PostgreSQL
 

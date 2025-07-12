@@ -95,7 +95,7 @@ Navigate to [http://localhost:8080](http://localhost:8080) and go to **Admin > C
 | Host      | `https://api.nasa.gov`          |
 | Extra     | `{ "api_key": "YOUR_API_KEY" }` |
 
-<img width="1680" height="1050" alt="Screenshot 2025-07-11 at 8 26 31 AM" src="https://github.com/user-attachments/assets/cbcbe0f9-50d9-4037-9595-216d79ae460b" />
+<img width="1674" height="666" alt="Screenshot 2025-07-11 at 8 26 31 AM" src="https://github.com/user-attachments/assets/70f7d111-c3b6-42ed-bb90-67596c024b2e" />
 
 ### 8. Verify Data in DB
 
@@ -108,6 +108,8 @@ Install [DBeaver](https://dbeaver.io/) and connect to Postgres:
 * Password: `postgres`
 
 You should now see your `nasa_apod_data` table populated.
+
+<img width="1680" height="1050" alt="Screenshot 2025-07-11 at 8 25 23 AM" src="https://github.com/user-attachments/assets/2c0ced86-fa3a-4828-9b11-24a3df99a217" />
 
 ---
 
@@ -145,7 +147,15 @@ This deploys your code to Astronomer on AWS.
 
 Example: `database-1.cvg400akejc8.eu-north-1.rds.amazonaws.com`
 
-### 6. Create Cloud Airflow Connections
+### 6. Open Airflow on Astronomer Cloud
+
+* After pushing your code with astro deploy:
+* Go to your Astronomer Workspace > DAGs > Click "Open in Airflow"
+
+<img width="1680" height="411" alt="Screenshot 2025-07-12 at 12 00 25 AM" src="https://github.com/user-attachments/assets/a611b3d0-e982-49d6-9a59-2d7c8c9e9473" />
+
+
+### 7. Create Cloud Airflow Connections
 
 In your deployed Astronomer Airflow UI:
 

@@ -20,7 +20,7 @@ with DAG(
     #Step 1 : Create the table if it does not exist
     @task
     def create_table():
-        hook = PostgresHook(postgres_conn_id='my_postgres_connection') #initialize the Postgres hook
+        hook = PostgresHook(postgres_conn_id='my_postgres_connection') #initialize the Postgres hook, this connection id will be required during connection in Airflow UI.
         create_table_query = """
             CREATE TABLE IF NOT EXISTS nasa_apod_data (
                 id SERIAL PRIMARY KEY,

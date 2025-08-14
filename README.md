@@ -95,6 +95,8 @@ Navigate to [http://localhost:8080](http://localhost:8080) and go to **Admin > C
 | Host      | `https://api.nasa.gov`          |
 | Extra     | `{ "api_key": "YOUR_API_KEY" }` |
 
+<img width="3358" height="930" alt="image" src="https://github.com/user-attachments/assets/d9129787-fb5c-4140-b6f9-9a543126d764" />
+
 <img width="1674" height="666" alt="Screenshot 2025-07-11 at 8 26 31 AM" src="https://github.com/user-attachments/assets/70f7d111-c3b6-42ed-bb90-67596c024b2e" />
 
 ### 8. Verify Data in DB

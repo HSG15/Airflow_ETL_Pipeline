@@ -134,8 +134,11 @@ astro login
 astro deployment list  # get your deployment ID
 astro deploy <deployment_id> -f
 ```
-
-This deploys your code to Astronomer on AWS.
+Here :
+* Your local Airflow project is packaged into a Docker image containing your DAGs, dependencies, and plugins.
+* This image is pushed to Astronomer’s private registry.
+* Astronomer updates your AWS-hosted Airflow deployment to use the new image.
+* New scheduler, webserver, and worker containers are launched with your updated code.
 
 <img width="1680" height="1050" alt="Screenshot 2025-07-11 at 9 43 51 AM" src="https://github.com/user-attachments/assets/4b2fd3a4-d1ed-41eb-b1df-81fbd8bcdb6c" />
 

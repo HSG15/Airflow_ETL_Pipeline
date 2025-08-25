@@ -2,6 +2,8 @@
 
 This project is an end-to-end ETL pipeline that fetches data from NASA's Astronomy Picture of the Day (APOD) API, transforms it, and loads it into a PostgreSQL database. The project starts locally using Airflow and Docker, and is then deployed to the cloud using Astronomer and AWS.
 
+<img width="1920" height="1080" alt="architecture" src="https://github.com/user-attachments/assets/5fca32f9-6963-42cd-82c3-cd2985295885" />
+
 ---
 
 ## 📁 Project Setup (Local Development)
